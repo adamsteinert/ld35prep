@@ -8,7 +8,7 @@ class Game extends Phaser.Game {
 
 	constructor() {
 		console.log('XXXXgame starting')
-		super(960, 640, Phaser.AUTO, 'content', null);
+		super(1280, 736, Phaser.AUTO, 'content', null);
 
 		this.state.add('PreloadState', PreloadState, false);
 		this.state.add('LoadingState', LoadingState, false);

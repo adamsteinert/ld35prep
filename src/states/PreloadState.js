@@ -5,8 +5,13 @@ import {game} from 'index';
 
 class PreloadState extends Phaser.State {
 	preload() {
-		util.trace('Preloading the preloader.')
+		util.trace('Preloading State.')
     game.load.image("loading","assets/sprites/loading.png")
+		game.load.image("loadText","assets/GameLoading.png")
+		game.load.image("background","assets/background.png")
+		game.load.image("level","assets/Sample Platform Level.png")
+
+		game.load.bitmapFont("littera", "assets/fonts/litteraDefault.png", "assets/fonts/litteraDefault.fnt")
 	}
 
 	create() {
