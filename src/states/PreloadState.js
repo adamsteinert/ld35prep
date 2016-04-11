@@ -9,7 +9,11 @@ class PreloadState extends Phaser.State {
     game.load.image("loading","assets/sprites/loading.png")
 		game.load.image("loadText","assets/GameLoading.png")
 		game.load.image("background","assets/background.png")
-		game.load.image("level","assets/Sample Platform Level.png")
+		game.load.image("player","assets/Blurble.png")
+
+		this.load.tilemap('gameTilemap', 'assets/Sample Platform Level.json', null, Phaser.Tilemap.TILED_JSON);
+		//game.load.image("level","assets/Sample Platform Level.png")
+		game.load.image("gameTiles", "assets/ShapeTileset.png")
 
 		game.load.bitmapFont("littera", "assets/fonts/litteraDefault.png", "assets/fonts/litteraDefault.fnt")
 	}
@@ -22,7 +26,8 @@ class PreloadState extends Phaser.State {
 		game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 
     util.trace('preload done.')
-		this.state.start('LoadingState')
+		//this.state.start('LoadingState')
+		this.state.start('GameState')
 	}
 
 	fileComplete(progress, cacheKey, success, totalLoaded, totalFiles) {
