@@ -16,6 +16,12 @@ class PreloadState extends Phaser.State {
 		game.load.image("gameTiles", "assets/ShapeTileset.png")
 
 		game.load.bitmapFont("littera", "assets/fonts/litteraDefault.png", "assets/fonts/litteraDefault.fnt")
+
+
+		game.load.image("clouds", "assets/Clouds.png");
+    game.load.image("cloudsblk", "assets/Clouds_blk.png");
+		game.load.image("cloudslt", "assets/Clouds_lt.png");
+		
 	}
 
 	create() {
@@ -27,7 +33,7 @@ class PreloadState extends Phaser.State {
 
     util.trace('preload done.')
 		//this.state.start('LoadingState')
-		this.state.start('GameState')
+		this.state.start('TileScrollState')
 	}
 
 	fileComplete(progress, cacheKey, success, totalLoaded, totalFiles) {

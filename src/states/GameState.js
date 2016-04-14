@@ -86,6 +86,7 @@ class GameState extends Phaser.State {
 	// Helpful tiled tutorial for loading tiled bits.
 	// https://gamedevacademy.org/html5-phaser-tutorial-top-down-games-with-tiled/
   // http://phaser.io/examples/v2/tilemaps/map-collide
+	// http://examples.phaser.io/_site/view_full.html?d=games&f=invaders.js&t=invaders
 
 	create() {
 		this.cursor = game.input.keyboard.createCursorKeys();

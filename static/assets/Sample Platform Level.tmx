@@ -1851,7 +1851,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="Object Layer 1">
+ <objectgroup name="Object Layer 1" visible="0">
   <object id="1" type="Floor" x="0" y="704" width="1280" height="32"/>
   <object id="2" type="Floor" x="416" y="608" width="416" height="32"/>
   <object id="3" type="Floor" x="64" y="544" width="352" height="32"/>
